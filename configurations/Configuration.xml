@@ -1,0 +1,57 @@
+<Configuration name="Temperature json" xmlns:flow="urn:frank-flow">
+
+    <Adapter name="Post json on temperature">
+
+        <Receiver name="JSON temperature">
+
+            <JavaListener name="JSON temperature" />
+
+        </Receiver>
+
+        <Pipeline>
+
+            <SenderPipe name="Get temperature from OpenWeather json">
+
+                <HttpSender
+                    url="https://api.openweathermap.org/data/2.5/weather?lat=52.37&amp;lon=4.9&amp;units=metric&amp;appid=d49898a1d21dd42523a1a63ce4a91fd5"
+                />
+
+            </SenderPipe>
+
+   			<JsonPipe name="JsonPipe2" flow:y="340" flow:x="180">   
+				<Param name="x.main" />
+			</JsonPipe>
+
+
+
+            <SenderPipe name="Post temperature to Telegram" flow:y="490" flow:x="180">
+
+                <HttpSender
+                    url="https://api.telegram.org/bot5900128222:AAEBvXTEuAVUOvLIURW_9PNF-GU20cPw4rI/sendMessage"
+                    methodType="POST"
+                    contentType="application/json" connectionTimeToLive="15" connectionIdleTimeout="5" protocol="TLS"
+                 />
+
+            </SenderPipe>
+			<JsonPipe name="JsonPipe" ifParam="ok" ifValue="true" flow:y="690" flow:x="230" />
+
+
+            <Exit name="EXIT" state="success" />
+
+        </Pipeline>
+
+    </Adapter>
+
+    <Scheduler>
+
+        <Job
+            name="JSON temperature"
+          
+            javaListener="JSON temperature"
+            function="sendMessage"
+            interval="10110000"
+        />
+
+    </Scheduler>
+
+</Configuration>
