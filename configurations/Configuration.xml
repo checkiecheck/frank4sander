@@ -49,7 +49,7 @@
           
             javaListener="JSON temperature"
             function="sendMessage"
-            interval="10110000"
+            interval="100000"
         />
 
     </Scheduler>
