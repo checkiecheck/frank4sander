@@ -18,10 +18,7 @@ softwareType: "standalone/other"
 description:
   en:
     shortDescription: >
-... todo
-          
-    longDescription: >
-...todo
+    filling something to prevent errors, will update this later
 
     features:
        - Statelessness
