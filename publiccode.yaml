@@ -17,8 +17,7 @@ softwareType: "standalone/other"
 
 description:
   en:
-    shortDescription: >
-    filling something to prevent errors, will update this later
+    shortDescription: filling something to prevent errors, will update this later
 
     features:
        - Statelessness
