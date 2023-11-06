@@ -15,19 +15,8 @@ developmentStatus: stable
 intendedAudience:
   scope:
   - government
-it:
-  conforme:
-    gdpr: false
-    lineeGuidaDesign: false
-    misureMinimeSicurezza: false
-    modelloInteroperabilita: false
+en:
   countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: false
-    pagopa: false
-    spid: false
-license: other
 localisation:
   availableLanguages:
   - en
@@ -43,6 +32,4 @@ organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
-releaseDate: '2023-11-06'
 softwareType: standalone/other
-url: "https:\bult.bz"
