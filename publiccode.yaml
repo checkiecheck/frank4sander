@@ -10,7 +10,7 @@ dependsOn:
     version: ''
     versionMax: '7.9'
     versionMin: '7.8'
-description: Figuring out FF configs with component registrationt
+description: Figuring out FF configs with component registrations
 developmentStatus: stable
 intendedAudience:
   scope:
