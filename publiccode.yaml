@@ -1,40 +1,20 @@
-# This repository adheres to the publiccode.yml standard by including this 
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/italia/publiccode.yml
-
-publiccodeYmlVersion: '0.2'
 applicationSuite: FrankFramework
 categories:
-  - translation
-  - collaboration
-  - application-development
+- translation
+- collaboration
+- application-development
 dependsOn:
   open:
-    - name: frank!framework
-      optional: false
-      version: ''
-      versionMax: '7.9'
-      versionMin: '7.8'
-description:
-  it:
-    features:
-      - notificiations handling
-      - loose coupling
-      - error tracking
-    genericName: 'Handling Zaak notificaties '
-    longDescription: |2
-       With this application, status changes of cases can be synchronized to mijn.overheid.nl/lopenzaken. This application does this by listening to the so-called notifications (webhooks) and will create XML files for certain case types based on a configuration. The xml files are in the format of a zakLk01 message, which is supported by mijn.overheid.nl/lopenzaken.  This output can be delivered through ESB to Logius 
-
-      The notifications dont carry a lot of information, so the system enriches
-      the details from the original case to be published in the XML message
-
-
-      ​
-    shortDescription: asdfasf
+  - name: frank!framework
+    optional: false
+    version: ''
+    versionMax: '7.9'
+    versionMin: '7.8'
+description: Figuring out FF configs with component registrationt
 developmentStatus: stable
 intendedAudience:
   scope:
-    - government
+  - government
 it:
   conforme:
     gdpr: false
@@ -49,19 +29,23 @@ it:
     spid: false
 legal:
   license: EUPL-1.2
+license: other
 localisation:
   availableLanguages:
-    - en
-    - nl
+  - en
+  - nl
   localisationReady: false
 maintenance:
   contacts:
-    - name: Eduard Witteveen
+  - name: Eduard Witteveen
   type: community
-name: MijnZaaknotificaties
+name: frank4sander
+nl: {}
+organisation: {}
 platforms:
-  - web
+- web
+publiccodeYmlVersion: '0.2'
 releaseDate: '2023-11-01'
 softwareType: standalone/other
-url: 'https://github.com/Sudwest-Fryslan/MijnZaakNotificaties.git'
 softwareVersion: v1.18.3
+url: "http:\bult.bz"
