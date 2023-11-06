@@ -27,7 +27,7 @@ it:
     cie: false
     pagopa: false
     spid: false
-
+license: other
 localisation:
   availableLanguages:
   - en
@@ -43,7 +43,6 @@ organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
-
+releaseDate: '2023-11-06'
 softwareType: standalone/other
-
 url: "https:\bult.bz"
