@@ -1,31 +1,66 @@
-applicationSuite: het-integratie-platform
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+applicationSuite: FrankFramework
 categories:
-- translation
-description: Figuring out FF configs with component registrationt
+  - translation
+  - collaboration
+  - application-development
+dependsOn:
+  open:
+    - name: frank!framework
+      optional: false
+      version: ''
+      versionMax: '7.9'
+      versionMin: '7.8'
+description:
+  en:
+    features:
+      - notificiations handling
+      - loose coupling
+      - error tracking
+    genericName: 'Handling Zaak notificaties '
+    longDescription: |2
+       With this application, status changes of cases can be synchronized to mijn.overheid.nl/lopenzaken. This application does this by listening to the so-called notifications (webhooks) and will create XML files for certain case types based on a configuration. The xml files are in the format of a zakLk01 message, which is supported by mijn.overheid.nl/lopenzaken.  This output can be delivered through ESB to Logius 
+
+      The notifications dont carry a lot of information, so the system enriches
+      the details from the original case to be published in the XML message
+
+
+      ​
+    shortDescription: Case notification publish to mijn overheid.
 developmentStatus: stable
+intendedAudience:
+  scope:
+    - government
+en:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
 legal:
-  license: European Union Public License 1.2
-license: other
+  license: EUPL-1.2
 localisation:
   availableLanguages:
-  - en
-  localisationReady: true
+    - en
+    - nl
+  localisationReady: false
 maintenance:
   contacts:
-  - name: Eduard Witteveen
+    - name: Eduard Witteveen
   type: community
-name: frank4sander
-nl:
-  commonground:
-  - layerType: integration
-  - installationType: docker
-  - intendedOrganisations: https://github.com/Sudwest-Fryslan
-  countryExtensionVersion: '1.0'
-organisation: {}
+name: MijnZaaknotificaties
 platforms:
-- frankframework
-publiccodeYmlVersion: '0.2'
-releaseDate: 2023-10-23
+  - web
+releaseDate: '2023-11-01'
 softwareType: standalone/other
-softwareVersion: 1.17.0
-url: "http:\bult.bz"
+url: 'https://github.com/Sudwest-Fryslan/MijnZaakNotificaties.git'
