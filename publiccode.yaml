@@ -17,7 +17,7 @@ en:
 intendedAudience:
   scope:
   - government
-license: EUPL-1.2
+license: other
 localisation:
   availableLanguages:
   - en
@@ -35,4 +35,4 @@ platforms:
 publiccodeYmlVersion: '0.2'
 releaseDate: '2023-11-06'
 softwareType: standalone/other
-url: "https:\buasaslt.bz"
+url: "https:\bult.bz"
