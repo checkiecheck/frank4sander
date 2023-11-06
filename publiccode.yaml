@@ -27,9 +27,7 @@ it:
     cie: false
     pagopa: false
     spid: false
-legal:
-  license: EUPL-1.2
-license: other
+
 localisation:
   availableLanguages:
   - en
@@ -45,7 +43,7 @@ organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
-releaseDate: null
+
 softwareType: standalone/other
-softwareVersion: null
+
 url: "https:\bult.bz"
