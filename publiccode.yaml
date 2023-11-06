@@ -12,11 +12,12 @@ dependsOn:
     versionMin: '7.8'
 description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
+en:
+  countryExtensionVersion: '0.2'
 intendedAudience:
   scope:
   - government
-en:
-  countryExtensionVersion: '0.2'
+license: other
 localisation:
   availableLanguages:
   - en
@@ -32,4 +33,6 @@ organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
+releaseDate: '2023-11-06'
 softwareType: standalone/other
+url: "https:\bult.bz"
