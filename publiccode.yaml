@@ -10,7 +10,7 @@ dependsOn:
     version: ''
     versionMax: '7.9'
     versionMin: '7.8'
-description: Figuring out FF configs with component registrations
+description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
 intendedAudience:
   scope:
@@ -48,4 +48,4 @@ publiccodeYmlVersion: '0.2'
 releaseDate: '2023-11-01'
 softwareType: standalone/other
 softwareVersion: v1.18.3
-url: "http:\bult.bz"
+url: "https:\bult.bz"
