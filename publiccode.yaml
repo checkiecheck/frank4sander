@@ -29,7 +29,7 @@ it:
     spid: false
 legal:
   license: EUPL-1.2
-
+license: other
 localisation:
   availableLanguages:
   - en
@@ -39,13 +39,13 @@ maintenance:
   contacts:
   - name: Eduard Witteveen
   type: community
-name: frank4sanders
+name: frank4sander
 nl: {}
 organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
-releaseDate: 
+releaseDate: null
 softwareType: standalone/other
-softwareVersion: 
+softwareVersion: null
 url: "https:\bult.bz"
