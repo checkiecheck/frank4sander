@@ -28,7 +28,7 @@ jobs:
           #REPO_TOPICS="${{ github.event.repository.topics }}"
           REPO_LICENSE="EUPL-1.2"
           REPO_CREATED_AT="${{ github.event.repository.created_at }}"
-          REPO_VERSION="${{ github.event.repository.version }}"
+          REPO_VERSION="${{ github.repository.version }}"
 
           ORGANISATION_NAME="${{ github.event.organization.login }}"     
           ORGANISATION_DESCRIPTION="${{ github.event.organization.description }}"     
