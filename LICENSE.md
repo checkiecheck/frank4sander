@@ -1,3 +1,4 @@
+EUROPEAN UNION PUBLIC LICENCE v. 1.2
 # Licence
 
 Licensed under the EUPL
