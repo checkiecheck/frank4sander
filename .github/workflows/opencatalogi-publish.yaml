@@ -27,7 +27,7 @@ jobs:
           REPO_HOMEPAGE="${{ github.event.repository.homepage }}"
           #REPO_TOPICS="${{ github.event.repository.topics }}"
           REPO_LICENSE="EUPL-1.2"
-          REPO_CREATED_AT="${{ github.repository.releaseDate }}"
+          REPO_CREATED_AT="${{ github.event.repository.created_at }}"
           REPO_VERSION="v.1.1.1"
           
           ORGANISATION_NAME="${{ github.event.organization.login }}"     
