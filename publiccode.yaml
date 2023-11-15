@@ -10,14 +10,22 @@ dependsOn:
     version: ''
     versionMax: '7.9'
     versionMin: '7.8'
-description: testing mijn zaak notificaties public yaml
+description: 
+  en:
+    shortDescription: > 
+        testing mijn zaak notificaties public yaml
+description: 
+  nl:
+    shortDescription: > 
+        testing mijn zaak notificaties public yaml
 developmentStatus: stable
 en:
   countryExtensionVersion: '0.2'
 intendedAudience:
   scope:
   - government
-license: EUPL-1.2
+legal:
+  license: European Union Public License 1.2
 localisation:
   availableLanguages:
   - en
@@ -25,7 +33,7 @@ localisation:
   localisationReady: false
 maintenance:
   contacts:
-  - name: Eduard Witteveen
+  - name: Sander
   type: community
 name: frank4sander
 nl: {}
