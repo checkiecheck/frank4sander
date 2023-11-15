@@ -3,7 +3,7 @@ version: '3.8'
 services:
   frank:
     build: .
-    image: wearefrank/%%INSTANCE_NAME_LOWERCASE%%:${VERSION:-latest}
+    image: wearefrank/frank4sander:${VERSION:-latest}
     ports:
       - "${PORT:-8080}:8080"
     environment:
