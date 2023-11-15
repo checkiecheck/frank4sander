@@ -26,15 +26,15 @@ jobs:
           REPO_URL="${{ github.event.repository.html_url }}"
           REPO_HOMEPAGE="${{ github.event.repository.homepage }}"
           #REPO_TOPICS="${{ github.event.repository.topics }}"
-          REPO_LICENSE="${{ github.event.repository.license.key }}"
+          REPO_LICENSE="EUPL-1.2"
           REPO_CREATED_AT="${{ github.event.repository.created_at }}"
-          REPO_VERSION="${{ github.repository.version }}"
-
+          REPO_VERSION="v.1.1.1"
+          
           ORGANISATION_NAME="${{ github.event.organization.login }}"     
           ORGANISATION_DESCRIPTION="${{ github.event.organization.description }}"     
           ORGANISATION_GITID="${{ github.event.organization.id}}"     
           ORGANISATION_URL="${{ github.event.organization.login }}"     
-          ORGANISATION_AVATAR="${{ github.event.organization.avatar_url }}"     
+          ORGANISATION_AVATAR="${{ github.organization.avatar_url }}"     
 
           echo "Installing PyYAML..."
           pip install PyYAML
@@ -71,6 +71,8 @@ jobs:
           #    data['topics'] = "$REPO_TOPICS"
           if "$REPO_LICENSE" != "null" and "$REPO_LICENSE":
               data['license'] = "$REPO_LICENSE"
+          if "$REPO_VERSION" != "null" and "$REPO_VERSION":
+              data['softwareVersion'] = "$REPO_VERSION"
 
           # Add releaseDate if not present
           if 'releaseDate' not in data:
@@ -105,7 +107,7 @@ jobs:
           REPO_URL="${{ github.event.repository.html_url }}"
           REPO_HOMEPAGE="${{ github.event.repository.homepage }}"
           #REPO_TOPICS="${{ github.event.repository.topics }}"
-          REPO_LICENSE="${{ github.event.repository.license.key }}"
+          REPO_LICENSE="EUPL-1.2"
           REPO_CREATED_AT="${{ github.event.repository.created_at }}"
 
           ORGANISATION_NAME="${{ github.event.organization.login }}"     

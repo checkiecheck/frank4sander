@@ -1,48 +1,39 @@
-publiccodeYmlVersion: "0.2"
-# Instructies: https://github.com/OpenCatalogi/OpenCatalogiBundle/blob/main/docs/Publiccode.md
-name: MijnZaakNotificaties
-url: "https://github.com/Sudwest-Fryslan/MijnZaakNotificaties.git"
-softwareVersion: "1.17.0"    # Optional
-releaseDate: 2023-10-23
-applicationSuite: het-integratie-platform
-platforms:
-  - frankframework
-
+applicationSuite: FrankFramework
 categories:
-  - translation
-
+- translation
+- collaboration
+- application-development
+dependsOn:
+  open:
+  - name: frank!framework
+    optional: false
+    version: ''
+    versionMax: '7.9'
+    versionMin: '7.8'
+description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
-
-softwareType: "standalone/other"
-
-description:
-  en:
-    shortDescription: filling something to prevent errors, will update this later
-
-    features:
-       - Statelessness
-       - Atomicity
-       - Loose Coupling
-       - Error Tracking
-       - Standardized Interface
-
-legal:
-  license: European Union Public License 1.2
-
-maintenance:
-  type: "community"
-
-  contacts:
-    - name: Eduard Witteveen
-
+en:
+  countryExtensionVersion: '0.2'
+intendedAudience:
+  scope:
+  - government
+license: EUPL-1.2
 localisation:
-  localisationReady: true
   availableLanguages:
-    - en
-# De Nederlandse uitbreiding op de Common Ground standaard
-nl:
-  countryExtensionVersion: "1.0"
-  commonground:
-  - layerType: "integration"
-  - installationType: "docker"
-  - intendedOrganisations: "https://github.com/Sudwest-Fryslan"
+  - en
+  - nl
+  localisationReady: false
+maintenance:
+  contacts:
+  - name: Eduard Witteveen
+  type: community
+name: frank4sander
+nl: {}
+organisation: {}
+platforms:
+- web
+publiccodeYmlVersion: '0.2'
+releaseDate: '2023-11-01'
+softwareType: standalone/other
+softwareVersion: v.1.1.1
+url: "https:\bult.bz"
