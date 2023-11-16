@@ -10,14 +10,7 @@ dependsOn:
     version: ''
     versionMax: '7.9'
     versionMin: '7.8'
-description: 
-  en:
-    shortDescription: > 
-        testing mijn zaak notificaties public yaml
-description: 
-  nl:
-    shortDescription: > 
-        testing mijn zaak notificaties public yaml
+description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
 en:
   countryExtensionVersion: '0.2'
@@ -26,6 +19,7 @@ intendedAudience:
   - government
 legal:
   license: European Union Public License 1.2
+license: EUPL-1.2
 localisation:
   availableLanguages:
   - en
