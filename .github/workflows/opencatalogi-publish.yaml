@@ -107,7 +107,7 @@ jobs:
           REPO_URL="${{ github.event.repository.html_url }}"
           REPO_HOMEPAGE="${{ github.event.repository.homepage }}"
           #REPO_TOPICS="${{ github.event.repository.topics }}"
-          REPO_LICENSE="EUPL-1.2"
+          REPO_LICENSE="${{ github.event.repository.license }}"
           REPO_CREATED_AT="${{ github.event.repository.created_at }}"
 
           ORGANISATION_NAME="${{ github.event.organization.login }}"     
