@@ -10,20 +10,16 @@ dependsOn:
     version: ''
     versionMax: '7.9'
     versionMin: '7.8'
+description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
 en:
   description: testing mijnzaak notifications public yaml
-  
-nl: 
-  description: testing MijnZaak notificaties public yaml
-  countryExtensionVersion: '0.2'  
-organisation: {}
 intendedAudience:
   scope:
   - government
 legal:
   license: European Union Public License 1.2
-
+license: Object
 localisation:
   availableLanguages:
   - en
@@ -34,7 +30,10 @@ maintenance:
   - name: Sander
   type: community
 name: frank4sander
-
+nl:
+  countryExtensionVersion: '0.2'
+  description: testing MijnZaak notificaties public yaml
+organisation: {}
 platforms:
 - web
 publiccodeYmlVersion: '0.2'
