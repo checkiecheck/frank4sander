@@ -12,8 +12,11 @@ dependsOn:
     versionMin: '7.8'
 description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
+nl:
+  shortDescription: test yaml mijnzaak notificaties public yaml
 en:
-  description: testing mijnzaak notifications public yaml
+  shortDescription: testing mijnzaak notifications public yaml
+  
 intendedAudience:
   scope:
   - government
