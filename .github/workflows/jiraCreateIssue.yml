@@ -1,6 +1,6 @@
 on: 
   issues:
-    [opened]
+
 
 name: Jira Example
 
