@@ -13,13 +13,13 @@ dependsOn:
 description: testing mijn zaak notificaties public yaml
 developmentStatus: stable
 en:
-  countryExtensionVersion: '0.2'
+  shortDescription: testing mijnzaak notifications public yaml
 intendedAudience:
   scope:
   - government
 legal:
   license: European Union Public License 1.2
-license: EUPL-1.2
+license: Object
 localisation:
   availableLanguages:
   - en
@@ -30,7 +30,9 @@ maintenance:
   - name: Sander
   type: community
 name: frank4sander
-nl: {}
+nl:
+  countryExtensionVersion: '0.2'
+  description: testing MijnZaak notificaties public yaml
 organisation: {}
 platforms:
 - web
