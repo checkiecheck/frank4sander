@@ -18,7 +18,7 @@ jobs:
 
     - name: create
       id: create
-      uses: atlassian/gajira-todo@v3
+      uses: atlassian/gajira-create@v3
       with:
         project: AD
         issuetype: Task
