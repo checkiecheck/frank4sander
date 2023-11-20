@@ -1,6 +1,6 @@
 on: 
   issues:
-    types: [opened, edited, milestoned]
+    types: [opened]
 
 name: Jira issue creationg from git issue
 
