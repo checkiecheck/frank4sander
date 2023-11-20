@@ -22,6 +22,7 @@ jobs:
       with:
         project: AD
         issuetype: Task
-        description: ${{ github.event.issue.title  }} 
+        summary: ${{ github.event.issue.title  }} 
+        description: ${{gitbug.event.issue.body}}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
