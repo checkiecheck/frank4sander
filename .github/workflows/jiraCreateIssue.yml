@@ -1,8 +1,8 @@
 on: 
   issues:
+    types: [opened, edited, milestoned]
 
-
-name: Jira Example
+name: Jira issue creationg from git issue
 
 jobs:
   build:
